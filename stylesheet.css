@@ -1,0 +1,168 @@
+* {
+	box-sizing: border-box;/*勝手にパソコンが計算して余白を入れてしますので、それを防ぐためにこのコードを入れる*/
+}
+
+
+body {
+	background-color: white;
+    margin: 0px;
+ /* Set font family here for what you want most of the text to be */
+}
+
+h1 {
+	background-color: white;
+	color: black;
+	font-size: 60px;
+	font-family: Helvetica;
+	margin-bottom: 15px;
+}
+
+
+a{
+    color: white;
+    font-style:normal;
+    text-decoration:underline;
+}
+
+span{
+	font-size: 35px;
+}
+
+
+
+/*For scroll effect*/
+.container{
+	height: 100vh;
+	width: 400vw;/*this code has to be chaneged when I put new page*/
+	transition: margin-left 0.3s ease-out;
+}
+
+
+.scrollbox {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.button {
+	position: fixed;
+	right: 0;
+	bottom: 28vh;
+	width: auto;
+	opacity: 1;
+	pointer-events: all;
+	transition: all 0.3s ease;
+	transform: none;
+	padding: 10px;
+	z-index: 9;
+}
+
+.button.back {
+	left: 0;
+	right: auto;
+}
+
+
+
+.hidden {
+	display: none;
+}
+
+
+/*For HOME styling*/
+.home {
+	border: white solid 20% 10%;
+	height: 100vh;/*"vh" はスクリーンの縦サイズのパーセンテージを意味する*/
+	width: 100vw;/*"vw" はスクリーンの横サイズのパーセンテージを意味する*/
+	padding: 30px;
+	float: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+    /*backgroud pics for each HOME pages*/
+	#home0 {
+	    background-image: url(https://lh3.googleusercontent.com/-TVQdZmrv6hE/VhUVhS33xXI/AAAAAAAAAY4/aoQeUEVenX8/s720-Ic42/tokyo5.jpg);
+	    /*I tried to put this "backgroud-repeat" and "backgroud-size" code on the ".home" div,
+	    but it didn't work so I'm just typyng the sama code 3 times which I know this makes you mad lol*/
+	}
+
+	#home1 {
+	    background-image: url(https://lh3.googleusercontent.com/-LGkmG3Bnre0/VhVWwncfYnI/AAAAAAAAAZ8/PPZqiylU8x4/s720-Ic42/sushi_darker.jpg);
+	}
+
+	#home2 {
+	    background-image: url(https://lh3.googleusercontent.com/-CgZuEjonjbA/VhVVZFZ51GI/AAAAAAAAAZk/Uo0BL3Z7mZE/s720-Ic42/hightech3_dark.jpg);
+	}
+
+	#home3 {
+	    background-image: url(https://lh3.googleusercontent.com/-cbm1EfDzDAc/VhVWwTnuMcI/AAAAAAAAAZ4/zvEVlOxEv6k/s720-Ic42/fuji_darker.jpg);
+
+	}
+
+
+.introduction {
+	bottom: 10vh;
+	width:40vw;
+	height:35vh;
+	padding: 15px;
+	margin-top: 50px;
+	border: 10px solid black;
+	background-color: white;
+	color: black;
+	font-family: Impact;
+	font-size: 20px;
+}
+
+
+.factButton {
+	float: left;
+	display: block;
+	color: white;
+	margin-left: 420px;
+	margin-top: 10px;
+	width: 150px;
+	height: 150px;
+	padding: 40px;
+	background: black;
+	text-align: left;
+	cursor: pointer;
+  	border: solid 7px red;
+  	position:static;
+}
+
+.factButton:hover,section.factButton.hover {
+	 border-color: red;
+	 color: red;
+}
+
+
+
+#chartTitle{
+	margin-top: 25px;
+	margin-bottom: 10px;
+    color: white;
+    font-size: 45px;
+    font-family: Helvetica;
+    text-align: center;
+
+}
+
+/* These 2 have to have width 100% togheter */
+#description{
+    padding: 25px;
+    float:left;
+    margin-top: 45px;
+    width:30%;
+    height:30%;
+    color: white;
+    font-family: Arial;
+    font-size:17px;
+}
+
+#chart{
+	position: relative;
+    float:left;
+    width:70%;
+    height:80vh;
+}
